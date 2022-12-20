@@ -66,3 +66,5 @@ def update(i):
 # Show the animation
 anim = animation.FuncAnimation(fig, update, frames=n_steps, interval=10)
 plt.show()
+anim.save('animation.gif', writer='pillow', fps=30)
+
